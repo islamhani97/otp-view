@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OTPView">
+        <attr name="digitTextColor" format="color" />
+        <attr name="digitPlaceholder" format="string" />
+        <attr name="digitPlaceholderColor" format="color" />
+        <attr name="digitsNumber" format="integer" />
+        <attr name="digitWidth" format="dimension" />
+        <attr name="digitHeight" format="dimension" />
+        <attr name="digitPadding" format="dimension" />
+        <attr name="digitStyle" format="enum">
+            <enum name="drawable" value="0" />
+            <enum name="rect" value="1" />
+            <enum name="line" value="2" />
+        </attr>
+        <attr name="digitDrawable" format="integer" />
+        <attr name="digitStrokeWidth" format="dimension" />
+        <attr name="digitStrokeColor" format="color" />
+        <attr name="digitFilledStrokeColor" format="color" />
+
+    </declare-styleable>
+</resources>

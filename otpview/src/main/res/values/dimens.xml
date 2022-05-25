@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="digit_default_width">40dp</dimen>
+    <dimen name="digit_default_height">40dp</dimen>
+    <dimen name="digit_default_padding">12dp</dimen>
+    <dimen name="digit_default_stroke_width">2dp</dimen>
+</resources>

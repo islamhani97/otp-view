@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.islam.android.libraries.otpview.OTPView
+        android:id="@+id/otp_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+
+        app:digitFilledStrokeColor="#0AC111"
+        app:digitHeight="52dp"
+        app:digitPadding="12dp"
+        app:digitPlaceholder="*"
+        app:digitPlaceholderColor="#5B5B5B"
+        app:digitStrokeColor="#5B5B5B"
+        app:digitStrokeWidth="3dp"
+        app:digitTextColor="#0AC111"
+        app:digitWidth="52dp"
+        app:digitsNumber="5"
+
+        app:layout_constraintBottom_toTopOf="@+id/otp_view_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.islam.android.libraries.otpview.OTPView
+        android:id="@+id/otp_view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+
+        app:digitFilledStrokeColor="#38A1F4"
+        app:digitHeight="52dp"
+        app:digitPadding="12dp"
+        app:digitPlaceholderColor="#676767"
+        app:digitStrokeColor="#676767"
+        app:digitStrokeWidth="3dp"
+        app:digitStyle="line"
+        app:digitTextColor="#38A1F4"
+        app:digitWidth="52dp"
+        app:digitsNumber="5"
+
+        app:layout_constraintBottom_toTopOf="@+id/otp_view_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_view_1" />
+
+    <com.islam.android.libraries.otpview.OTPView
+        android:id="@+id/otp_view_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+
+        app:digitDrawable="@drawable/custom_shape"
+        app:digitHeight="52dp"
+        app:digitPadding="12dp"
+        app:digitPlaceholder="x"
+        app:digitPlaceholderColor="#676767"
+        app:digitStyle="drawable"
+        app:digitTextColor="#FF0057"
+        app:digitWidth="52dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_view_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
